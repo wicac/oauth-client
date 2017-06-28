@@ -1,0 +1,11 @@
+#build command
+docker build -t wicac/oauth-client:v1 .
+
+#login into container for debugging, comment entrypoint and cmd in Dockerfile before execute
+docker run --name shell1 -it wicac/oauth-client:v1 /bin/sh
+
+#run mongodb and expose it to port 27017
+docker run --name mongo -p 27017:27017  -d mongo:latest
+
+#run commnand 
+docker run -d -p 4000:4000 --name client -t wicac/oauth-client:v1

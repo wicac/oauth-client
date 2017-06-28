@@ -1,0 +1,19 @@
+{
+  "name": "oauth_client",
+  "version": "1.0.0",
+  "description": "NodeJS implementation of Telco Authentication Kit Client on top of Docker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wicac/oauth-client.git"
+  },
+  "author": "wicac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wicac/oauth-client/issues"
+  },
+  "homepage": "https://github.com/wicac/oauth-client/#readme"
+}
